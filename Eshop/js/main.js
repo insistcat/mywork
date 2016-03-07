@@ -1,3 +1,6 @@
+window.onload()=function(){
+	
+};
 var  buy={};
 
 buy.tools={};
