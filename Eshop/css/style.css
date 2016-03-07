@@ -1,0 +1,510 @@
+/*reset*/
+body,ul,p,h1,h2,h3,h4,dl,dt,dd{margin: 0px;padding: 0px; font-family: Arial;}
+li{list-style: none;}
+img{border: none;}
+a{text-decoration: none;}
+a:hover{text-decoration: underline;}
+
+.clear{zoom:1;}
+.clear:after{content: "";display: block;clear: both;}
+/*end reset*/
+
+body{
+	/*拼接背景图*/
+	background:#fff url(../img/body_bg.png) repeat-x;
+}
+
+/*Top*/
+#Top{
+	/*因为有左右浮动的问题，最好设置高*/
+	width: 960px;height: 30px;margin: 0 auto;
+}
+.TopMenu {
+	/*background: yellow;*/
+	height: 30px;
+
+	/*在没加float之前，背景色占了960px，加了float，只占了前面一半*/
+	float:left;
+}
+.TopMenu li{
+	float:left;
+	height: 30px;
+	/*display: inline-block;*/
+	/*font-size: 13px;*/
+	background: url(../img/top_icon.png) no-repeat right 14px;
+	padding-right: 18px;
+	margin-right: 16px;
+	line-height: 30px;
+}
+.TopMenu a{
+	font-size: 13px;
+	color: #c0c0c0;
+}
+.TopMenu a:hover{
+	color:#fff;
+	text-decoration: none;
+}
+.TopMenu .NoDot{
+	background: none;padding: 0;margin:0;
+}
+
+.TopContact{
+	float:right;
+	/*background: yellow;*/
+}
+.TopContact li{
+	float: left;
+	height: 30px;
+	line-height: 30px;
+	color:#fff;
+	font-size: 13px;
+	font-weight: bold;
+	}
+.TopContact .Phone{
+	background: url(../img/top_icon.png) no-repeat 8px -14px;
+	padding:0 38px;
+}
+.TopContact .Help{
+	background: url(../img/top_icon.png) no-repeat 0 -44px;
+	padding:0 38px;
+}
+.TopContact .Help a{
+	color: #fff;
+}
+.TopContact .Flag{ margin:1px 6px;}
+.ie6Pic img{float: left; position: relative;top: 8px;}
+/*Top End*/
+
+/*header*/
+#Header{
+	height:100px;
+	width: 960px;
+	margin:0 auto;
+	position: relative;
+	background: url(../img/header_bg.png) no-repeat;
+}
+#Shopping{
+	width: 260px;
+	height: 100px;
+	background: url(../img/shopping_bg.png) no-repeat;
+	position: relative;
+}
+#Shopping a{
+	display: block;
+	position: absolute;
+	top: 63px;
+	left: 104px;
+	width: 114px;
+	height: 23px;
+	background: url(../img/shopping_bg.png) no-repeat 0 -100px;
+	line-height: 23px;
+	color: #ffc200;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+#Shopping a:hover{
+	color: #f8d564;
+}
+#Shopping p{
+	color: #f7f7f7;
+	font-size: 20px;
+	padding:30px 0 0 84px;
+
+}
+#Header h1{
+	width: 238px;
+	position: absolute;
+	top: 0;
+	left: 50%;
+	margin-left: -119px;
+}
+#Header .Search{
+	top: 34px;
+	right: 0;
+}
+.Search{
+	width: 292px;
+	height: 31px;
+	background: url(../img/search.png) no-repeat;
+	position: absolute;
+}
+.Search .Text{
+	position: absolute;
+	top: 0;
+	left: 20px;
+	width: 230px;
+	height: 31px;
+	line-height: 30px;
+	border: none;
+	background: none;
+	font-size: 13px;
+	color: #666666;
+	font-weight: bold;
+	outline: none;
+}
+.Search .Button{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 42px;
+	height: 31px;
+	border:none;
+	background:  none;
+}
+/*Header End*/
+/*nav*/
+#Nav{
+	width: 960px;
+	height: 42px;
+	margin: 0 auto;
+}
+#Nav li{
+	float: left;
+	height: 28px;
+	margin-left: 2px;
+	margin-top: 8px;
+}
+#Nav a{
+	float: left;
+	height: 28px;
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+}
+#Nav strong{
+	float: left;
+	height: 28px;	
+	/*因为strong默认加粗，所以放在strong下面，也可以给span*/
+	font-weight: normal; 
+}
+#Nav span{
+	float: left;
+	height: 28px;	
+	padding: 0 16px;
+	line-height: 28px;
+}
+#Nav a:hover,#Nav .active a{
+	background: url(../img/btn_bg.jpg) repeat-x 0 -56px;cursor: pointer;
+}
+#Nav a:hover strong,#Nav .active strong{
+	background: url(../img/btn_bg.jpg) no-repeat;cursor: pointer;
+}
+#Nav a:hover span,#Nav .active span{
+	background: url(../img/btn_bg.jpg) no-repeat right -28px;cursor: pointer;
+}
+/*Nav End*/
+/*Content*/
+#Content{
+	width: 1000px;
+	margin: 24px auto 0;
+	background: url(../img/content_bg.png) repeat-y -1000px 0;
+} 
+#ContentTop{
+	width: 1000px;
+	background: url(../img/content_bg.png) no-repeat;
+	padding-top: 10px;
+}
+#ContentBottom{
+	width: 1000px;
+	background: url(../img/content_bg.png) no-repeat -2000px bottom;
+}
+/*Content End*/
+/*Banner*/
+#Ad{
+	width: 940px;
+	height: 300px;
+	margin: 0 auto;
+	position: relative;
+}
+#Ad ul{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+#Ad li{
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+#Ad h2{
+	position: absolute;
+	width: 268px;
+	text-align: center;
+	bottom: 11px;
+	z-index: 3;
+	font-size: 25px;
+	color: #ffc600;
+}
+#Ad p{
+	position: absolute;
+	bottom: 8px;
+	left: 268px;
+	z-index: 3;
+	font-size: 13px;
+	color: #ffcccc;
+	line-height: 16px;
+	width: 630px;
+}
+#Ad .BannerBg{
+	width: 940px;
+	height: 52px;
+	background: #000;
+	filter:alpha(opcity:80);
+	opacity: 0.8;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: 2;
+}
+/*Ad End*/
+#Main{
+	width: 940px;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+#Side{
+	width: 210px;
+	float: left;
+}
+.ModuleList{
+	width: 210px;
+	margin-bottom: 14px;
+}
+#Side h2{
+	font-size: 15px;
+	color: #fff;
+	font-weight: bold;
+	height: 29px;
+	line-height: 28px;
+	text-align: center;
+	background: url(../img/h2_bg.jpg) repeat-x 0 -58px;
+	margin-bottom: 1px;
+}
+#Side h2 strong{
+	display: block;
+	height: 29px;
+	background: url(../img/h2_bg.jpg) no-repeat;
+}
+#Side h2 span{
+	display: block;
+	height: 29px;
+	background: url(../img/h2_bg.jpg) no-repeat right -29px;
+}
+#List{
+	width: 210px;
+	background: url(../img/module_bg.png) repeat-y;
+}
+#List ul{
+	/*width:194px;*/
+	background: url(../img/module_bg.png) no-repeat -210px bottom;
+	padding: 15px 8px;
+}
+#List li{
+	/*width: 194px;*/
+	height: 28px;
+	border-bottom: 1px solid #fff;
+	line-height: 28px;
+}
+#List a{
+	display: block;
+	padding-left: 32px;
+	font-size: 12px;
+	color: #434343;
+	text-decoration: none;
+	font-weight: bold;
+}
+#List a:hover{
+	color: #b20e00;
+	background: #f6d158;
+}
+/*ModuleList End*/
+/*ModuleJoin*/
+.ModuleJoin{
+	width: 210px;
+	background: url(../img/module_bg.png) repeat-y -630px;
+}
+.ModuleJoinTop{
+	width: 210px;
+	background: url(../img/module_bg.png) no-repeat -420px top;
+}
+.ModuleJoinBottom{
+	width: 210px;
+	background: url(../img/module_bg.png) no-repeat -840px bottom;
+}
+#JoinNow{
+	width: 180px;
+	margin: 0 auto;
+}
+.ModuleJoin p{
+	font-size: 15px;
+	color: #666;
+	line-height: 18px;
+	padding: 12px 0;
+}
+#JoinNow .JoinText{
+	width: 178px;
+	height: 25px;
+	line-height: 25px;
+	border: 1px solid #fff;
+	border-top: 1px solid #9c9c9c;
+	border-left: 1px solid #c0c0c0;
+	margin-bottom: 8px;
+}
+#JoinNow .JoinSubmit{
+	width: 88px;
+	height: 25px;
+	background: url(../img/join_bg.png) no-repeat;
+	border: none;
+	font-size: 15px;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+}
+.ModuleJoin ul{
+	margin:14px 8px; 
+	background: url(../img/logoshare_bg.gif) no-repeat 10px 7px;
+	padding-bottom: 7px;
+}
+.ModuleJoin li{
+	color: #434343;
+	font-size: 13px;
+	border-top: 1px solid #fff; 
+	height: 35px;
+	text-align: left;
+	padding: 10px 0 0 62px;
+}
+/*#Twitter{
+	height: 35px;
+	line-height: 35px;
+}*/
+#Payment{
+	margin: 34px 18px;
+}
+#Wrap{
+	width: 706px;
+	float: right;
+}
+
+.sort{
+	height: 20px;
+}
+.sort dl{
+	float: left;
+}
+.sort dt{
+	float: left;
+	font-size: 12px;
+	color: #747474;
+	font-weight: bold;
+	line-height: 17px;
+	margin-right: 4px;
+}
+.sort dd{
+	float: left;
+	position: relative;
+	width: 108px;
+	height: 17px;
+	margin-right: 12px;
+}
+.sort h2{
+	width: 108px;
+	height: 17px;
+	line-height: 17px;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	font-weight: normal;
+	color: #747474;
+	text-indent: 5px;
+}
+.sort a{
+	position: absolute;
+	width: 19px;
+	height: 19px;
+	top: 0;
+	left: 90px;
+	background: url(../img/sort.png) no-repeat;
+	z-index: 2;
+}
+.sort a:hover{
+	background: url(../img/sort.png) no-repeat 0 -19px;
+}
+.sort ul{
+	width: 108px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	position: absolute;
+	top: 18px;
+	z-index: 1;
+	display: none;
+}
+.sort li{
+	text-indent: 4px;
+	line-height: 17px;
+	color: #747474;
+}
+.sort .activeMenu{
+	background: #abc;
+	color: #fff;
+	cursor: pointer;
+}
+.sort p{
+	float: right;
+}
+.sort p strong{
+	font-size: 15px;
+	font-weight: bold;
+	color: #999;
+	margin-right: 5px;
+}
+.sort p span{
+	color: #747474;
+	padding: 5px;
+}
+.sort .activeNum{
+	color:#b20e00;
+}
+
+#productList{width: 706px;overflow:hidden;}
+#productList h2,.scroll h2{font-size: 18px;color: #666;font-weight: bold;height: 58px;line-height: 64px;}
+#productList ul{width: 736px;}
+#productList li{float: left;width: 182px;height: 200px;}
+#productList a{display:block;width: 154px;height: 114px;border: 1px solid #c6c6c6;margin-bottom: 10px;}
+#productList a:hover{border: 1px solid #a4dfb9;}
+#productList h3{font-size: 15px;line-height: 18px;}
+#productList p{font-size: 12px;line-height: 18px;}
+#productList span{color: #b20e20;}
+
+.page{text-align: center;border-bottom: 1px solid #cdcdc8;padding-bottom: 5px;}
+.page a{display:inline-block;height: 20px;line-height:20px;padding:0 7px;font-size:12px;color: #b20e20;text-decoration: none;}
+.page a:hover,.page .active{color: #fff;background: #b20e20;text-decoration: none;}
+
+.scroll{width: 706px;}
+.scrollMid{height: 197px;background: url(../img/scroll_bg.jpg) repeat-x 0 -281px;}
+.scrollRight{height: 197px;background: url(../img/scroll_bg.jpg) no-repeat 0 -84px;}
+.scrollLeft{height: 197px;background: url(../img/scroll_bg.jpg) no-repeat right -478px;position: relative;}
+.prev,.next{display: block;width: 35px;height: 42px;position: absolute;top:74px;}
+.prev{background: url(../img/scroll_bg.jpg) no-repeat;left: 0}
+.next{background: url(../img/scroll_bg.jpg) no-repeat 0 -42px;right: 0;}
+.listWrap ul{margin: 0 40px;}
+.listWrap li{float: left;height: 164px;width: 145px;padding: 33px 30px 0;}
+.listWrap a{display:inline-block;width: 145px;height: 99px;border: 1px solid #c6c6c6;margin-bottom: 13px;}
+.listWrap p{font-size:12px;color: #660000;text-align: center;}
+
+#Footer{height: 303px;background: url(../img/footer_bg.jpg) repeat-x;}
+.footerInfo{width: 960px;height: 61px;margin:0 auto;position: relative;}
+.footerInfo .secured,.footerInfo .document{float:left;margin:0 10px 0 15px;font-size: 14px;color: #c6c6c6;height: 61px;line-height: 61px;text-indent: 65px;}
+.secured{background: url(../img/footer_icon.jpg) no-repeat;}
+.document{background: url(../img/footer_icon.jpg) no-repeat 0 -61px;}
+.footerInfo .Search{position: absolute;top: 16px;right: 0;}
+.footerLink{width: 960px;height: 242px;margin:0 auto;}
+.footerLink dl{float: left;width: 168px;padding:0 8px;}
+.footerLink dt{float: left;width: 168px;height: 74px;line-height:74px;font-size: 15px;color:#fff;}
+.footerLink dd{line-height: 20px;width: 168px;}
+.footerLink a{font-size: 13px;color:#cfcfcf;}
+.footerLink .space{margin-right: 30px;padding-left: 0;}
+
+
+
+
