@@ -1,0 +1,86 @@
+body,ul,p{margin: 0;padding: 0;}
+li{list-style: none;}
+
+.showPic{
+	width: 400px;
+	height: 430px;
+	margin: 50px auto 0; 
+	position: relative;
+}
+
+.bigPic{
+	width: 400px;
+	height: 320px;
+}
+.bigPic{
+	width: 400px;
+	height: 320px;
+	position: relative;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+.bigPic li{
+	position: absolute;
+	width: 400px;
+	height: 320px;
+	background: url(../img/loading.gif) no-repeat center center;
+	overflow: hidden;
+	/*z-index: 0;*/
+}
+.bigPic .prev,.bigPic .next{
+	display: block;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 130px;
+	filter: alpha(opacity:0);
+	opacity: 0;
+	z-index: 101;
+}
+.bigPic .prev{
+	background: url(../img/btn.gif) no-repeat;
+	left: 10px;
+}
+.bigPic .next{
+	background: url(../img/btn.gif) no-repeat 0 -60px;
+	right: 10px;
+}
+.bigPic .prev_bg,.bigPic .next_bg{
+	display: block;
+	width: 200px;
+	height: 320px;
+	filter: alpha(opacity:0);
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	z-index: 100;
+}
+.bigPic .prev_bg{
+	background: green;
+	left: 0;
+}
+.bigPic .next_bg{
+	background: red;
+	right: 0;
+}
+.bigPic .left,.bigPic .right{
+	width: 180px;
+	height: 24px;
+	position: absolute;
+	bottom: 0;
+	color: #fff;
+	background: #000;
+	padding: 0 10px;
+	filter: alpha(opacity:60);
+	opacity: 0.6;
+	z-index: 100;
+}
+.bigPic .left{left: 0;}
+.bigPic .right{right: 0;text-align: right;}
+
+.smallPic{width: 400px;height: 110px;background: #999;overflow: hidden;}
+.smallPic ul{width: 390px;height: 110px;float: left;margin:5px;position: relative;;left: 0;}
+.smallPic li{width: 120px;height: 90px;padding: 5px;
+	float: left;filter: alpha(opacity:60);opacity: 0.6;}
+.smallPic li img{width: 120px;height: 90px;}
