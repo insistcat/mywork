@@ -1,0 +1,108 @@
+body,p,ul,li{
+	margin: 0;
+	padding: 0;
+	color: #000;
+	font-family: '宋体'；
+	font-size:12px;
+}
+img{
+	border: none;
+	border-radius: 100%;
+	height: 80px;
+	width: 80px;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+p{
+	font-size: 14px;
+}
+span{
+	font-weight: bold;
+	line-height: 160%;
+}
+section{
+	margin: 5px;
+}
+
+/*清除浮动*/
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: "kankankanzaina";
+    clear: both;
+    /*visibility: hidden;*/
+    /*border: 1px solid red;*/
+}
+.clearfix {
+    zoom: 1;
+}
+
+/*边框*/
+.bg_border{
+	border: 1px solid #999;
+}
+/*内边距*/
+.bg_padding{
+	padding: 20px;
+}
+.bg_color{
+	background-color: #eee;
+}
+
+#context{
+	margin: 0 auto;	
+	margin: 20px;
+	width: auto;
+	min-width: 800px;
+}
+#team{
+	width: 158px;
+	height: 78px;
+	float: left;
+	padding: 20px;
+}
+#team p{
+	/*问题1：p是块标签，可以用float或者inline-block上去
+	用display: inline-block;字体怎么放到top的位置,除了定位还有什么方法？*/
+	display: inline-block;
+	height: 80px;
+	vertical-align: top;
+	
+	/*问题2：p不能设置left，与照片距离不够,计算并设置padding-right*/
+/*	float: right;
+	height: 80px;
+	text-align: left;
+	padding-right: 6px;*/
+	font-size: 12px;
+}
+#list ul{
+	float: right;
+	width: 118px;
+	height: 598px;
+}
+#container{
+	/*问题1：清除浮动之后，高度是自适应的，中间自适应部分高度，浏览器计算并显示了
+	它大于内容高度，如何用内容来撑开,清浮动的位置错了*/
+	margin:0 140px 0 220px;
+}
+#container p{
+	line-height: 160%;
+}
+
+.intro{
+	height: 60px;
+	padding: 5px;
+}
+.intro img{
+	float: left;
+	width: 60px;
+	height: 60px;
+}
+.intro p{
+	margin-left:70px;
+	padding-top: 13px;
+}

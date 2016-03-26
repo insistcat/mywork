@@ -1,0 +1,100 @@
+/*reset*/
+body,ul,h1,h2,h3,h4{
+	margin: 0;
+	padding: 0;
+	font-family: '宋体',Arial;
+	font-size: 12px;
+	color: #000;
+}
+body{
+	background-color: #dedede;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+/*reset End*/
+
+/*清除浮动*/
+.clearfix:after {
+    display: block;
+    height: 0;
+    content: ".";
+    clear: both;
+    visibility: hidden;
+}
+
+.clearfix {
+    zoom: 1;
+}
+
+/*nav*/
+.navWrap{
+	width: 1240px;
+	margin: 0 auto;
+	height: 60px;
+}
+#nav{
+	width: 100%;
+	background-color: #333;
+	height: 60px;
+	color: #fff;
+}
+#nav h1 a{
+	font-size: 36px;
+	line-height: 60px;
+	text-indent: 18px;
+	float: left;
+	color: #fff;
+}
+#nav ul{
+	float: right;
+}
+#nav li{
+	float: left;
+	width: 120px;
+	text-align: center;
+}
+#nav li:hover,#nav li a:hover{
+	background-color:#c0f3c2;
+	color: #000; 
+	border-radius: 5px;
+}
+#nav li a{
+	font-size: 16px;
+	display: inline-block;
+	width: 120px;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+}
+/*nav End*/
+.conWrap{
+	width: 1240px;
+	margin: 0 auto;
+	border: 1px solid red;
+}
+/*.left{float: left;}*/
+.contain{
+	width: 856px;
+	height: 810px;
+	border: 1px solid #838383;
+	border-bottom: 3px solid #838383;
+	border-right: 3px solid #838383;
+	padding: 20px;
+	margin: 20px;
+}
+.contain h2{
+	font-size: 20px;
+	line-height: 40px;
+	height: 40px;
+	font-weight: bold;
+}
+.contain h4{
+	font-size: 16px;
+	color: #626262;
+	height: 30px;
+	line-height: 30px;
+}

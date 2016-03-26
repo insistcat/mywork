@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>clearfix</title>
+    <style>
+    .bg_border{border: 1px solid;}
+    .bg_padding{padding:20px;margin: 10px;}
+    #left{background-color: red;width: 200px;height: 200px;float: left;}
+    #right{background-color: green;width: 200px;float: right;}
+    .com{width: 200px;height: 120px;background-color: yellow;margin-top: 10px;}
+    #context{margin: 0 300px 0 300px;}
+
+    .clearfix:after {display: block;height: 0; content: "不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你不明白不明了不理解你的心，明明要靠近确害怕失去你";clear: both;/*visibility: hidden;*/}
+    .clearfix {zoom: 1;}
+    div{line-height: 120%;}
+    </style>
+</head>
+<body>
+    <div class="bg_border bg_padding  clearfix">
+        <div id="left" class="bg_border bg_padding">left</div>
+        <div id="right" class="bg_border bg_padding">
+            <div class="com bg_border">right1</div>
+            <div class="com bg_border">right2</div>
+        </div>
+        <div id="context" class="bg_border bg_padding">我知道clearfix是用在父元素，用来清除子元素的浮动<br>
+        当clearfix用在父元素时，这个位置的高度是跟随内容的高度<br>当clearfix用在元素本身时，一样也清除了浮动，但是初始高度是固定的，虽然增加内容也会跟随内容。<br>我理解的clearfix是用伪类在不影响结构的前提下，产生一个没有高度且不可见的div，里面放clear<br>clear both是清除元素上部的浮动<br>问题1：clearfix为什么一定是清除元素内部的元素？<br>问题2：clearfix用于本身时高度为什么不是跟随内容的<br>问题3：请详细的讲一下clearfix是如何工作的，虽然google了很久，我真的没弄明白上面2个问题<br>最后谢谢~~</div>
+    </div>
+</body>
+</html>
