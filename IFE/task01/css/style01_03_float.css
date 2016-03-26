@@ -32,10 +32,10 @@ section{
 .clearfix:after {
     display: block;
     height: 0;
-    content: "kankankanzaina";
+    content: ".";
     clear: both;
-    /*visibility: hidden;*/
-    /*border: 1px solid red;*/
+	visibility: hidden;
+    border: 1px solid red;
 }
 .clearfix {
     zoom: 1;
@@ -82,7 +82,6 @@ section{
 #list ul{
 	float: right;
 	width: 118px;
-	height: 598px;
 }
 #container{
 	/*问题1：清除浮动之后，高度是自适应的，中间自适应部分高度，浏览器计算并显示了
