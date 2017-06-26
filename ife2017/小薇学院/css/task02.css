@@ -7,14 +7,15 @@
 	.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden}
 	.clearfix{*+height:1%;}
 
+	.page{padding:10px 0px;background-color: #333;}
 	.contain{padding: 0 20px;}
-	nav{background-color: #333;}
-	.page{padding:10px;}
+	nav{padding: 0px 20px;}
 	nav>ul{float:right;}
 	nav>ul>li{float:left;}
 	nav>ul>li>a{height: 38px;line-height: 38px;padding:0 10px;color:#fff;}
+	.left{width: 62%;float:left;}
 	.active{color:#a4a9ac;}
-	.article,.right{margin-top: 20px;padding:30px 10px;border:1px solid #cdcdcd;border-right: 2px solid #868686;border-bottom: 2px solid #868686;background-color: #fff;}
+	.article,.right{margin-top: 20px;padding:30px 20px;border:1px solid #cdcdcd;border-right: 2px solid #868686;border-bottom: 2px solid #868686;background-color: #fff;}
 	.article h2{padding:5px 0;}
 	.article h3{padding:5px 0;color:#676767;}
 	.article .writer{font-size: 0.8em;color:#676767;}
@@ -26,6 +27,7 @@
 	.article table th{background-color: #333;height: 24px;color:#fff;}
 	.article table td,th{border:1px solid #eee;height: 24px;}
 	.article tr:last-child{background-color: #ccc;font-weight: bold;}
+	.right{float:right;}
 	.right h2{border-left: 3px solid #ccc;font-size: 1.1em;text-indent: 0.4em;padding: 8px 0px;}
 	.right table{margin:0 auto;}
 	.right table p{text-align: right;}
@@ -35,4 +37,6 @@
 	.right .intext,.right select{text-indent: 4px;height: 24px;line-height: 24px;}
 	.right select{width: 80px;}
 	.right .choose input{margin-left: 6px;}
-	.right button{width: 100%;padding:8px 0px;background-color: #3355d0;color:#fff;border-radius: 5px;
+	.right button{width: 100%;padding:8px 0px;background-color: #3355d0;color:#fff;border-radius: 5px;}
+	footer{width: 100%;text-align: center;background-color:#333;color:#fff;margin-top: 30px;}
+	footer p{height: 40px;line-height: 40px;padding: 20px 0px;}
