@@ -1,0 +1,15 @@
+*{margin: 0;padding: 0;}
+/* flex实现 */
+ html,body{height: 100%;} 
+ .wrap{
+	display: flex;
+	justify-content:center;
+	align-items:center;
+	height: 100%;
+
+} 
+
+.re{width: 400px;height: 200px;background-color: #eee;position: relative;z-index:14;}
+.ra{border-radius: 100%;background-color: #fc0;width: 100px;height: 100px;z-index:1;}
+.left{position:absolute;top:-50px;left:-50px;}
+.right{position:absolute;top:150px;left:350px;}
