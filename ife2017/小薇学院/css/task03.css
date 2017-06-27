@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none}
+a{text-decoration: none;display: block;}
+
+.clearfix:after{content:'.';display: block;height: 0;clear:both;visibility: hidden;}
+.clearfix{*+height:1%;}
+
+.contain{margin:20px;padding: 20px;background-color: #eee;min-width: 680px;}
+.contain img{width: 80px;}
+.contain .team{float:left;padding:20px;background-color: #fff;width: 160px;}
+.contain .team_img{float:left;}
+.contain .team p{margin-left: 100px;font-size: 0.9em;}
+.contain .person{float:right;padding:0px 20px;background-color: #fff;}
+.contain .person li{margin-top: 20px}
+.contain .person li:last-child{margin-bottom: 20px}
+.contain .content{margin:0px 140px 0px 220px;padding:20px;background-color: #fff;}
