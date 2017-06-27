@@ -1,0 +1,44 @@
+*{margin: 0;padding: 0;}
+ul,li{list-style: none}
+a{text-decoration: none;display: block;}
+
+.contain{
+	margin:20px;
+	padding: 20px;
+	background-color: #eee;
+	min-width: 680px;
+	display:flex;
+	display: -webkit-flex;
+	align-items:flex-start;
+}
+.contain img{
+	width: 80px;
+}
+.contain .team{
+	padding:20px;
+	background-color: #fff;
+	width: 160px;}
+.contain .team p{
+	font-size: 0.9em;
+	margin-left: 100px;}
+.contain .team img{
+	float:left;
+}
+.contain .content{
+	margin:0px 20px;
+	padding:20px;
+	background-color: #fff;
+	flex:1;
+}
+
+.contain .person{
+	padding:0px 20px;
+	background-color: #fff;
+	width: 80px;
+}
+.contain .person li{
+	margin-top: 20px
+}
+.contain .person li:last-child{
+	margin-bottom: 20px;
+}
