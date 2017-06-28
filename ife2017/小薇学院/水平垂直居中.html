@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>水平垂直居中</title>
+	<style>
+	body{padding:20px;color:#ccc;}
+	.father{background-color: #eee;}
+	.bg_color{background-color: #000;color:#fff;}
+
+	/* --------已知的宽高--------- */
+
+	/* 子元素固定宽高，用负margin */
+	/* 	.one{position: relative;height: 600px;}
+	.child{width: 300px;height: 300px;padding:20px;position: absolute;top:50%;left:50%;margin:-170px 0px 0px -170px;} */
+
+	/* 子元素未知宽高 ,transform*/
+	/* 	.one{position: relative;height: 600px;}
+	.child{padding:20px;position: absolute;top:50%;left:50%;transform: translate(-50%,-50%);} */
+
+	/* 子元素未知宽高 ,flex*/
+	.one{display: flex;justify-content:center;align-items:center;height: 500px;}
+	</style>
+</head>
+<body>
+		<div class="father one">
+		<p class="child bg_color">这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中这是垂直居中</p>	
+	</div>
+</body>
+</html>

@@ -5,14 +5,24 @@
 	<title>水平居中</title>
 	<style>
 	.father{width: 200px;height: 200px;background-color: #eee;}
-	/* 行内元素居中:父级元素（text-align）
-	.father1{text-align: center;} */
-	/* 块级元素居中：子元素（块级、宽度、margin：0 auto）
-	.child{display:block;width: 30px;margin:0 auto;}*/
+
+	/* ----------子元素为行内元素---------- */
+
+	/* 父级元素（text-align）*/
+	/*.father1{text-align: center;} */
+
+
+	/* ----------子元素为块级元素---------- */
+
+	/* 单个块级元素居中，子元素（块级、宽度、margin：0 auto）*/
+	/*.child{display:block;width: 30px;margin:0 auto;}*/
+
 	/* 多个块级元素排一排 :
+
 	1.子元素设置成inline-block，父元素把子元素当行内元素处理
 	.one{text-align: center;}
 	.child{display: inline-block;}
+	
 	2.父元素设置flex
 	.one{display: flex;justify-content:center;}*/
 	.child{margin: 0 auto;width: 30px;}
