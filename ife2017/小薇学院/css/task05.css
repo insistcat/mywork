@@ -1,0 +1,50 @@
+*{margin: 0;padding: 0;}
+body{background-color: #dedede;}
+a{text-decoration: none;display: block;}
+img{border:none;}
+ul>li{list-style: none;}
+button{border:none;}
+
+.wrap{margin:0 auto;padding:0px 20px;min-width: 900px;}
+.border{margin-top:20px;padding:20px;border:1px solid #cdcdcd;border-right: 2px solid #868686;border-bottom: 2px solid #868686;background-color: #fff;}
+
+/* 头部*/
+.nav{background-color: #333333;padding:0px 20px;}
+.nav ul{float:right;}
+.nav ul li{float:left;}
+.nav ul li a{height: 42px;line-height: 42px;padding: 0px 10px;color:#fff;} 
+.nav .nav_main{padding:20px 0px;}
+/* footer*/
+footer{background-color: #333333;height: 80px;line-height: 80px;color:#fff;text-align: center;}
+
+/* 文章 */
+.article{padding-top:20px;margin-right: 430px;padding-bottom: 40px; min-width: 400px;}
+.article:last-child{margin-bottom: 40px;}
+.article h2{height: 50px;line-height: 50px;}
+.article h3{height: 40px;line-height:40px;color:#555450;}
+.article .little{font-size: 0.8em;color:#555450;}
+.article .content{margin-top: 10px;}
+.article .spe_list a{margin-left: 10px;height: 30px;line-height: 30px;}
+.article .img_list li{float:left;margin:10px;}
+.article .img_list li div{padding:10px;border:1px solid #eee;}
+.article .img_list li p{text-align: center;}
+.article .img_list img{width: 120px;padding: 10px;}
+.article .ol_list{padding-left: 40px;}
+.article table{width: 100%;text-align: left;border-collapse: collapse;}
+.article table td,th{border:1px solid #eee;height: 30px;}
+.article table tr:last-child{background-color:#cccccc;}
+.article table th{background-color: #333333;color:#fff;}
+
+/* 右侧 */
+.right{float:right;}
+.form_main{width: 366px;}
+.form_main h3{height: 42px;line-height: 42px;border-left: 2px solid #cbcbcb;text-indent: 1em;}
+.form_main table{margin-top: 10px;}
+.form_main table td{height: 36px;}
+.form_main table p{text-align: right;}
+.form_main table span{font-size: 0.8em;color:#cdcdcd;}
+.form_main .intext{height: 24px;text-indent: 1em}
+.form_main .choose input{margin-right: 10px;}
+.form_main table select{width: 80px;height: 30px;text-indent: 1em;}
+.form_main button{width: 100%;height: 40px;background-color: #3355d0;font-weight: bolder;color:#fff;
+	margin-top: 10px;border-radius: 5px;}
