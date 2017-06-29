@@ -16,7 +16,7 @@ ul,li{list-style: none;}
 .nav span:last-child{color:#d45d5c;position: absolute;bottom:0px;right: 0px;}
 
 /* 内容 */
-.contain{padding:36px 0px;border-bottom:1px solid #938e8c; }
+.contain{padding:36px 0px 0px 0px;border-bottom:1px solid #938e8c; }
 .contain .pb_bottom{padding-bottom: 40px;}
 
 /* 第一个区域 左边*/
@@ -64,7 +64,7 @@ ul,li{list-style: none;}
 /* 右边 */
 .contain .b_right{width: 458px;float: right;}
 .contain .b_right .b_pic{width: 458px;height: 255px;background: url(../img/3.png) no-repeat;position: relative;}
-.contain .b_right .b_pic div{width: 458px;height: 61px;position: absolute;bottom: 0px;background-color:#000;opacity: 0.4; }
+.contain .b_right .b_pic div{width: 456px;height: 61px;position: absolute;bottom: 0px;background-color:#000;opacity: 0.4; }
 .contain .b_right .b_pic div p{border-left:3px solid #72b16a;height: 44px;color:#72b16a;font-style: oblique;
 								line-height: 44px;margin:8px 0px 8px 42px;}
 .contain .b_right .b_pic span{font-size:26px;color:#fff;font-family: '微软雅黑';font-style: normal;padding:0px 10px;}								
@@ -78,14 +78,17 @@ ul,li{list-style: none;}
 .contain .b_right .b_content ul li em{position:absolute;right:0px;font-size:12px;color:#5a5b5b;font-family: '宋体';
 							line-height: 20px;height: 20px;}							
 .contain .b_right .b_one{height: 160px;width: 220px;background-color: #d45d5c;padding:0px 20px;
-						display: flex;color:#fff;float:left;margin-right: 20px;}
+						display: flex;color:#fff;float:left;}
 .contain .b_right .b_one span{font-size: 110px;font-family: '微软雅黑';display: block;}						
 .contain .b_right .b_one div{margin:36px 0px;border-left: 2px solid #fff;padding-left: 10px;}
 .contain .b_right .b_one div p{margin: 5px 0px;}
 .contain .b_right .b_one div p:last-child{font-size:12px;color:#fff;font-family: '黑体';line-height: 6px;}
 .contain .b_right .b_two {padding:0px 10px;}
-.contain .b_right .b_two p{font-size: 14px;font-family: '黑体';color:#5a5b5b;font-style: oblique;line-height: 16px;}
-.contain .b_right .b_two em{font-size: 40px;font-family: '黑体';color:#d45d5c;line-height: 40px;float:left;}
-.contain .b_right .b_two em
+.contain .b_right .b_two p{font-size: 14px;font-family: '黑体';color:#5a5b5b;font-style: oblique;
+						line-height: 16px;text-indent: 30px;position: relative;margin-left: 270px;}
+.contain .b_right .b_two span{font-size: 72px;font-family: '黑体';color:#d45d5c;line-height: 16px;
+						font-style: normal;}
+.contain .b_right .b_two span:first-child{position: absolute;top:16px;left:-68px;}	
+.contain .b_right .b_two span:last-child{position: absolute;bottom:-28px;right:-30px;}						
 /* 底部 */
 .footer{text-align: right;}
