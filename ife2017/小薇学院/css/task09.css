@@ -139,7 +139,7 @@ margin-top: 4px;}
 .fouth_table a:first-child{margin: 0px 5px 0px 0px;}
 .fouth_table .fouth_active{background-color:#fff;height: 30px;border:1px solid #cdcdcd;
 	border-bottom: 1px solid #fff;z-index: 5;}
-.fouth_title{min-width: 540px;}
+.fouth_title{min-width: 480px;}
 .fouth_xls{position: absolute;top:50px;left:20px;max-width: 461px;}
 .fouth_table div:nth-child(2){border:1px solid #cdcdcd;border-bottom-left-radius: 5px;border-bottom-right-radius: 5px;
 border-top-right-radius: 5px;padding:30px;}

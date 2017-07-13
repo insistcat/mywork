@@ -1,0 +1,15 @@
+.main{border:1px solid #cdcdcd;}
+.main div{width: 150px;padding:20px;border:1px solid #cdcdcd;margin:20px;}
+.one{height: 120px;}
+.two{height: 100px;}
+.three{height: 40px;}
+.four{height: 200px; order:-1;}
+.center{display: flex;}
+
+@media screen and (max-width: 1980px) and (min-width: 641px){
+	.first{align-items:center;justify-content:center;}
+}
+
+@media screen and (max-width: 640px){
+	.first{flex-direction:row;justify-content:space-around;flex-wrap:wrap;}
+}
