@@ -13,7 +13,7 @@ img{vertical-align: bottom;}
 .center{display: flex;justify-content:space-between;flex-flow:row wrap;}
 .bg_grey{background-color:rgb(222, 222, 222); }
 .bg_white{background-color: rgb(255,255,255);}
-.nav a{height: 40px;line-height: 40px;font-size:1.2vw;
+.nav a{height: 40px;line-height: 40px;font-size:2.5vh;
 	font-weight: bolder;padding:0px 10px;}
 .nav_active{border-bottom: 3px solid rgb(0, 199, 214);}
 
@@ -32,7 +32,7 @@ img{vertical-align: bottom;}
 .center_special{display: flex;justify-content:center;flex-direction:column;}
 
 .container{margin-top: 30px;}
-.container h1{height: 60px;line-height: 60px;font-size: 2.2rem;}
+.container h1{height: 50px;line-height: 50px;font-size: 3vh;}
 .container img{width: 40%;height: 40%;}
 .model{padding:10px 0px;}
 .block{padding:20px 0px;}
