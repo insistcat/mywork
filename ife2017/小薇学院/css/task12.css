@@ -1,0 +1,45 @@
+*{margin: 0;padding: 0;}
+body{font-size: 12px;font-family: "宋体";color:rgb(105,105,105);box-sizing:boeder-box;}
+
+.page{max-width: 640px;margin: 0 auto;}
+
+.page table{width: 100%;text-align: center;border-collapse: collapse;}
+
+table tr td{border:1px solid #ccc;height: 40px;}
+thead tr td{background-color: #000;color:#fff;font-size: 1.5rem;}
+tbody tr td{font-size: 1.2rem;}
+tbody tr:nth-child(odd){background-color: #cdcdcd;color:#fff;}
+tbody tr:nth-child(odd) td{border-right:1px solid #fff;}
+tbody tr:nth-child(2),table tr:nth-child(3),table tr:nth-child(4){color:red;}
+input{margin:30px auto;border:1px solid #ccc;height: 40px;width: 100px;display: block;}
+input:last-child{outline-color: blue;}
+input:nth-last-of-type(1):focus{
+	width: 200px;
+	border-radius: 5px;
+	-webkit-transition:width 1s linear;
+	-ms-transition:width 1s linear;
+	-moz-transition:width 1s linear;
+	-o-transition:width 1s linear;
+	transition:width 1s linear;
+	box-shadow:0px 0px 7px rgba(0,80,192,0.8);
+}
+.change{margin:20px auto;width: 400px;border:1px solid #ccc;position: relative;background-color: green;}
+.change a{width: 30px;height: 30px;border:1px solid #ccc;display: block;
+line-height: 30px;text-align: center;background-color: #000;color:#fff;}
+ #tab1,#tab2,#tab3{height: 0px;} 
+.change .tab1 a{position: absolute;top:170px;right:80px;}
+.change .tab2 a{position: absolute;top:170px;right:40px;}
+.change .tab3 a{position: absolute;top:170px;right:0px;}
+#tab1{background-color: green;}
+#tab2{
+	background:-moz-linear-gradient(left,green 50%,#00f 50%);
+	background:-webkit-gradient(linear,left,right,from(green),to(#00f));
+	background:-webkit-linear-gradient(left,green 50%,#00f 50%);
+	background:-o-linear-gradient(left,green 50%,#00f 50%);
+	background:linear-gradient(left,green 50%,#00f 50%);
+}
+#tab3{background-color: blue;}
+
+#tab1:target{height: 200px;}
+#tab2:target{height: 200px;}
+#tab3:target{height: 200px;}
