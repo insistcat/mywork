@@ -1,6 +1,6 @@
 window.onload = function(){
 
-	init('sort-btn','source','li','b');
+	init('sort-btn1','sort-btn2','source','li','b');
 
 	/**
 	 * getData方法
@@ -35,11 +35,21 @@ window.onload = function(){
 	 * 按空气质量对data进行从小到大的排序
 	 * 返回一个排序后的数组
 	 */
-	function sortAqiData(data){
-		data.sort(function(a,b){
-			return b[1] - a[1];
-		});
-		return data;
+	function sortAqiData(data,flag){
+		var List = [];
+		var unList = [];
+
+		if(flag == 1){
+				List = data.sort(function(a,b){
+				return b[1] - a[1];				
+			});
+			return List;
+		}else{
+				unList = data.sort(function(a,b){
+				return a[1] - b[1];				
+			});
+			return unList;
+		}			
 	}
 
 	/**
@@ -59,18 +69,29 @@ window.onload = function(){
 	 }
 
 
-	 function btnHandle(id,label1,label2){
+	 function btnHandle(id,label1,label2,flag,uld){
 	 	var aqiData = getData(id,label1,label2);
-	 	aqiData = sortAqiData(aqiData);
-	 	render(aqiData,'resort');
+
+	 	aqiData = sortAqiData(aqiData,flag);
+
+	 	console.log(aqiData);
+	 	render(aqiData,uld);
 	 }
 
 	/*点击事件*/
-	function init(id1,id2,label1,label2){
-		var btn = document.getElementById(id1);
+	function init(id1,id2,id3,label1,label2){
+		var btn1 = document.getElementById(id1);
+		var btn2 = document.getElementById(id2);
 
-		btn.onclick = function(){
-			btnHandle(id2,label1,label2);
+		btn1.onclick = function(){
+			btnHandle(id3,label1,label2,1,'resort1');
+			btn1.disabled = "ture";
+
+		}
+
+		btn2.onclick = function(){
+			btnHandle(id3,label1,label2,0,'resort2');
+			btn2.disabled = "ture";
 		}
 	}
 };
