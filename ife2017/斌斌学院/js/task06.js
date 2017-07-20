@@ -1,45 +1,73 @@
 window.onload = function(){
 
 	var data = [];
-	var num = 0;
 
 	/*按钮初始化*/	
 	init('left-in');
 	init('right-in');
 	init('left-out');
 	init('right-out');
+	init('search');
 
-	var reBtn = document.getElementById('resort');
-	reBtn.onclick = function(){
-		var aList = getData('content','span');
-		sort(aList);
-		figure(aList,'content');
-	}
-
-	/*用图形展示数字*/
-	function figure(data,id){	
-		var oCon = document.getElementById(id);
-		for(var i=0;i<data.length;i++){
-			var hSpan = oCon.getElementsByTagName('span');
-			hSpan[i].style.height = data[i] + 'px';
-			hSpan[i].innerHTML = data[i];
-		}
-	}
-
-	/*获取输入框数据*/
+	/*获取输入框数组*/
 	function getTxt(id){
 		var oTxt = document.getElementById(id);
 		var bit = oTxt.value;
-		if( bit>=10&&bit<=100){
-			return bit;
-		}else{
-			alert('请录入10-100的数字！');
-			return null;
+		var bitList= [];
+		var newBit = [];
+		bit = bit + '/'; 
+		for(var i=0;i<bit.length;i++){
+			if( (/^[\u4e00-\u9fa5a-zA-Z0-9]+$/).test(bit[i]) ){
+				var num = 0;
+				newBit += bit[i];
+			}else{
+				if(num == 0){
+					bitList.push(newBit);
+					newBit = [];					
+				}
+				num = 1;
+			}
 		}
+		return bitList;
 	}
 
-	/*重新排序*/
+	/*搜索匹配*/
+	function sear(id,keyWord){
+		var search = document.getElementById(id);
+		var keyWord = document.getElementById(keyWord);
+				
+		keyWord.onmouseover = function(){
+			if(keyWord.value == '请输入搜索内容'){
+				keyWord.value = '';
+			}
+		}
 
+		keyWord.onmouseout = function(){
+			if(keyWord.value == ''){
+				keyWord.value = '请输入搜索内容';
+			}
+		}
+		
+
+		search.onclick = function(){
+			var conList = getData('content','span');
+			var txt = keyWord.value;
+			var reg = new RegExp(eval('/'+ txt + '/'));
+			var sList = document.getElementsByTagName('span');
+			var num = 0
+			for(var i=0;i<conList.length;i++){
+				if(reg.test(conList[i])){		
+					num = 1;		
+					sList[i].style.background = 'blue';
+				}else{
+					if((i==conList.length-1)&&(num==0)){
+						alert('检索不到该字符！');
+					}
+				}
+			}
+		}
+
+	}
 
 	/*加入数据*/
 	function putIn(id_data,id_btn,id_con,flag){
@@ -47,39 +75,25 @@ window.onload = function(){
 		var oCon = document.getElementById(id_con);
 
 		pushBtn.onclick = function(){
-			var newSpan = document.createElement('span');
-			var data = getTxt(id_data);
-			newSpan.innerHTML = data;
-			if(data != null){
-				if(num<=10){
+			var data = getTxt(id_data);			
+			for(var i=0;i<data.length;i++){
+				var newSpan = document.createElement('span');
+				if(data != null){
 					if(flag == 0){
 						if(oCon.children[0]){
-							num++;
-							if(num>5){
-								alert('队列数为' + num + ';插入值：'+ newSpan.innerHTML);
-								oCon.insertBefore(newSpan,oCon.children[0]);
-							}else{
-								oCon.insertBefore(newSpan,oCon.children[0]);
-							}
+							newSpan.innerHTML = data[data.length-1-i];
+							oCon.insertBefore(newSpan,oCon.children[0]);
 						}else{
-							num++;
+							newSpan.innerHTML = data[data.length-1-i];
 							oCon.appendChild(newSpan);
 						}		
-					}else{				
-						num++;
-						if(num>5){
-							alert('队列数为' + num + ';插入值：'+ newSpan.innerHTML);
-							oCon.appendChild(newSpan);
-						}else{
-							oCon.appendChild(newSpan);
-						}	
+					}else{	
+						newSpan.innerHTML = data[i];		
+						oCon.appendChild(newSpan);	
 					}
 				}else{
-					alert('队列大于' + num +'！不能继续输入！');
 					return;
-				}	
-			}else{
-				return;
+				}				
 			}
 		}
 	}
@@ -130,6 +144,8 @@ window.onload = function(){
 			del('left-out','content',1);
 		}else if(id == 'right-out'){
 			del('right-out','content',-1,'span');
+		}else if(id == 'search'){
+			sear('search','key-word');
 		}
 	}
 
