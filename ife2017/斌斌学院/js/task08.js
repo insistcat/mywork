@@ -92,8 +92,8 @@ window.onload = function(){
 		}			
 	}
 
-	/*中序遍历*/
-	function order(node){
+	/*中序遍历暂时没做出来*/
+/*	function order(node){
 		if(node != null){
 			var length = node.children.length;	
 			for(var i=0;i<length;i++){
@@ -102,7 +102,7 @@ window.onload = function(){
 				order(node.children[i]);
 			}
 		}
-	}
+	}*/
 
 
 	preBtn.addEventListener('click',function(){
