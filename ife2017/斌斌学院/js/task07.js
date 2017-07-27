@@ -4,20 +4,16 @@ window.onload = function(){
 	var orderBtn = document.getElementById('order');
 	var lastBtn = document.getElementById('last');
 	var time = 0;
-	console.log(root);
-	console.log(root.children[0]);
 
 
 	function showTime(node){
 		node.style.backgroundColor = 'white';
 		setTimeout(function(){
 			node.style.backgroundColor = 'purple';
-			console.log(time);
-		},time+=500);
+		},time+=200);
 		setTimeout(function(){
 			node.style.backgroundColor = 'white';
-			console.log(time);
-		},time+=500);
+		},time+=200);
 	}
 
 	function pre(node){

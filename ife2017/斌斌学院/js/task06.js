@@ -53,9 +53,11 @@ window.onload = function(){
 			var conList = getData('content','span');
 			var txt = keyWord.value;
 			var reg = new RegExp(eval('/'+ txt + '/'));
+			console.log(reg);
 			var sList = document.getElementsByTagName('span');
 			var num = 0
 			for(var i=0;i<conList.length;i++){
+				console.log(conList[i]);
 				if(reg.test(conList[i])){		
 					num = 1;		
 					sList[i].style.background = 'blue';
